@@ -87,12 +87,20 @@ header {
   font-weight: 400;
 }
 .items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 80%;
   margin-left: 10%;
   margin: 40px 10%;
 }
 .item-container {
   width: 260px;
+  margin-bottom: 60px;
+  transition: 1s;
+}
+.item-container:hover {
+  padding: 10px;
 }
 .item-image {
   width: 100%;
@@ -154,8 +162,9 @@ header {
   margin-top: 8px;
   font-size: 18px;
   width: 100%;
-  background-color: #ff3f6c;
+  background-color: lightgreen;
   border: none;
   padding: 5px 15px;
   border-radius: 10px;
+  cursor: pointer;
 }
