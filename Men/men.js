@@ -1,6 +1,6 @@
 let itemsContainerElement = document.querySelector(".items-container");
 let innerHTML = "";
-items.map((item) => {
+items.forEach((item) => {
   innerHTML += `<div class="
   item-container">
     <img class="item-image" src="${item.item_image}" alt="shoe image">
