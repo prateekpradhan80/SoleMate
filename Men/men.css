@@ -77,7 +77,8 @@ header {
 .action-bar {
   display: flex;
   min-width: 200px;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-top: 15px;
 }
 .action-container {
   display: flex;
@@ -85,7 +86,9 @@ header {
   align-items: center;
   font-size: 15px;
   font-weight: 400;
+  text-decoration: none;
 }
+
 .items-container {
   display: flex;
   flex-wrap: wrap;
@@ -167,4 +170,26 @@ header {
   padding: 5px 15px;
   border-radius: 10px;
   cursor: pointer;
+}
+.bag-item-count {
+  background-color: #f1656f;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 18px;
+  padding: 0 6px;
+  height: 18px;
+  position: relative;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  left: 13px;
+  top: -44px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.action-container a {
+  text-decoration: none;
+}
+a{
+  color: rgb(19, 19, 19);
 }
