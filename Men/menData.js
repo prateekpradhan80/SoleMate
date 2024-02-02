@@ -140,7 +140,7 @@ const items = [
     },
     comapny_name: "NIke Air jordan Excee",
     current_price: 2058,
-    original_price:5208,
+    original_price: 5208,
     discount: "60%",
   },
   {
@@ -181,13 +181,13 @@ const items = [
   },
   {
     id: "16",
-    item_image: "/images/shoe16.png",
+    item_image: "/images/casualshoe.jpeg",
     rating: {
       stars: 5.0,
       noOfReviews: "8k",
     },
     comapny_name: "Nike basketball shoes",
-    current_price:8569,
+    current_price: 8569,
     original_price: 9520,
     discount: "20%",
   },
