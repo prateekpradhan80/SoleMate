@@ -1,17 +1,15 @@
-let bagItems ;
+let bagItems;
 onLoad();
-console.log(localStorage.getItem('bagItems'));
 function onLoad() {
- let bagItemsStr=localStorage.getItem('bagItems');
- console.log(bagItemsStr);
- bagItems=bagItemsStr?JSON.parse(bagItemsStr):[];
+  let bagItemsStr = localStorage.getItem("bagItems");
+  bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
   displayItemsOnHomePage();
   displayBagIcon();
 }
 
 function addToBag(itemId) {
   bagItems.push(itemId);
-  localStorage.setItem('bagItems',JSON.stringify(bagItems));
+  localStorage.setItem("bagItems", JSON.stringify(bagItems));
   displayBagIcon();
 }
 
@@ -27,6 +25,9 @@ function displayBagIcon() {
 }
 function displayItemsOnHomePage() {
   let itemsContainerElement = document.querySelector(".items-container");
+  if (!itemsContainerElement) {
+    return;
+  }
   let innerHTML = "";
   items.forEach((item) => {
     innerHTML += `<div class="

@@ -35,7 +35,6 @@ let items = [
     original_price: "RS 7892",
     discount: "30%",
   },
-  ,
   {
     id: "04",
     item_image: "/images/womenshoe4.png",
