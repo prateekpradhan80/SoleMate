@@ -1,4 +1,4 @@
-let items = [
+let Womenitems = [
   {
     id: "01",
     item_image: "/images/womenshoe1.png",

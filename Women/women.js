@@ -1,8 +1,8 @@
 let bagItems;
-console.log(items);
+console.log(Womenitems);
 onLoad();
 function onLoad() {
-  let bagItemsStr = localStorage.getItem("bagItems");
+  let bagItemsStr = localStorage.getItem("womenbagItems");
   bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
   displayItemsOnHomePage();
   displayBagIcon();
@@ -10,7 +10,7 @@ function onLoad() {
 
 function addToBag(itemId) {
   bagItems.push(itemId);
-  localStorage.setItem("bagItems", JSON.stringify(bagItems));
+  localStorage.setItem("womenbagItems", JSON.stringify(bagItems));
   displayBagIcon();
 }
 
@@ -30,7 +30,7 @@ function displayItemsOnHomePage() {
     return;
   }
   let innerHTML = "";
-  items.forEach((item) => {
+  Womenitems.forEach((item) => {
     innerHTML += `<div class="
     item-container">
       <img class="item-image" src="${item.item_image}" alt="shoe image">

@@ -10,9 +10,9 @@ function onLoad() {
 
 function loadBagItemsObjects() {
   bagItemObjects = bagItems.map((itemId) => {
-    for (let i = 0; i < items.length; i++) {
-      if (itemId == items[i].id) {
-        return items[i];
+    for (let i = 0; i < Womenitems.length; i++) {
+      if (itemId == Womenitems[i].id) {
+        return Womenitems[i];
       }
     }
   });
@@ -49,7 +49,7 @@ function displayBagSummary() {
   <span class="price-item-value">₹ ${finalPayment}</span>
 </div>
 </div>
-<button class="btn-place-order">
+<button class="btn-place-order" onclick="location.href = '/landing.html';">
 <div class="css-xjhrni">PLACE ORDER</div>
 </button>
 </div>`;
@@ -65,7 +65,7 @@ function displayBagItems() {
 }
 function removeFromBag(itemId) {
   bagItems = bagItems.filter((bagItemId) => bagItemId != itemId);
-  localStorage.setItem("bagItems", JSON.stringify(bagItems));
+  localStorage.setItem("womenbagItems", JSON.stringify(bagItems));
   loadBagItemsObjects();
   displayBagItems();
   displayBagIcon();
