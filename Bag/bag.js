@@ -49,7 +49,7 @@ function displayBagSummary() {
   <span class="price-item-value">₹ ${finalPayment}</span>
 </div>
 </div>
-<button class="btn-place-order">
+<button class="btn-place-order" onclick="location.href = '/landing.html';">
 <div class="css-xjhrni">PLACE ORDER</div>
 </button>
 </div>`;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        font-size: 40px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <h1 id="demo">Wait for confirmation.....</h1>
+    <script>
+      const myTimeout = setTimeout(myGreeting, 2000);
+
+      function myGreeting() {
+        document.getElementById("demo").innerHTML =
+          "Thank you for Shopping...💕";
+      }
+    </script>
+  </body>
+</html>
